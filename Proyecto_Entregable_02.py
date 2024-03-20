@@ -2,7 +2,7 @@ print("Entradas:")
 print()
 print("Pedido del cliente")
 ap = input("Apellido del cliente: ")
-tpvp = input("Tiene tarjeta PuraVidaPops: ")
+tpvp = input("Tiene tarjeta PuraVidaPops (Si/No): ")
 cdh = int(input("Cantidad de heldos: "))
 sdh = input("Sabor de los helados: ")
 cbd = int(input("Cantidad de batidos: "))
@@ -31,7 +31,7 @@ tsd = pph + ppb
 print("Total sin descuento " + str(tsd))
 dap = tsd * .10 if ap == "Alvarado" else 0
 print("Descuento por apellido del día: " + str(int(dap)))
-dpvp = tsd * .15 if tpvp == "sí" else 0
+dpvp = tsd * .15 if tpvp == "Si" else 0
 print("Descuento por PuraVidaPops : " + str(int(dpvp)))
 tp = (tsd - dap) - dpvp
 print("Total a pagar " + str(int(tp)) + " colones")
